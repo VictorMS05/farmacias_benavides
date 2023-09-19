@@ -6,76 +6,89 @@
   <meta name="description" content="Página extra oficial de Farmacias Benavides">
   <meta name="keywords" content="Farmacia, Benavides">
   <link rel="shortcut icon" href="farmacias_benavides_logo.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="harry.css">
 </head>
 
-<body style="margin: 0%;">
-  <div id="contenedor" style="display: flex; flex-direction: column;">
-    <header style="height: 150px; display: flex;">
-      <div id="logo" style="background-color: #0055AA; width: 200px; height: 150px;">
+<body>
+  <div id="contenedor">
+    <header>
+      <div id="logo">
         <center><a href="index.html"><img src="farmacias_benavides_logo.png" width="150px" height="150px"></a>
         </center>
         <!-- Aquí va el logo -->
       </div>
-      <div id="slogan" style="background-color: #0055AA; width: 100%; height: 150px;">
+      <div id="slogan">
         <center>
-          <a href="index.html" style="text-decoration: none;">
-            <h1 style="color: white;">FARMACIAS BENAVIDES</h1>
+          <a href="index.html">
+            <h1 id="titulo">FARMACIAS BENAVIDES</h1>
           </a>
-          <h3 style="color: white; font-style: oblique;">Sentirte acompañado es sentirte mejor</h3>
+          <h3>Sentirte acompañado es sentirte mejor</h3>
         </center>
       </div>
     </header>
-    <nav style="float: both; background-color: #004477; display: flex; justify-content: space-evenly; padding: 15px;">
-      <b><a href="index.html" style="text-decoration: none; color: #EEEEEE;">Inicio</a></b>
-      <b><a href="somos.html" style="text-decoration: none; color: #EEEEEE;">Somos</a></b>
-      <b><a href="servicios.html" style="text-decoration: none; color: #EEEEEE;">Servicios</a></b>
-      <b><a href="ubicacion.html" style="text-decoration: none; color: #EEEEEE;">Ubicación</a></b>
+    <nav>
+      <b><a href="index.html">Inicio</a></b>
+      <b><a href="somos.html">Somos</a></b>
+      <div class="dropdown">
+        <button class="dropbtn"><b>Servicios</b>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Fotografía</a>
+          <a href="#">Pago de servicios</a>
+          <a href="#">Benavides Conmigo</a>
+        </div>
+      </div>
+      <!-- <b><a href="servicios.html">Servicios</a></b> -->
+      <b><a href="ubicacion.html">Ubicación</a></b>
     </nav>
-    <div id="principal" style="display: flex;">
+    <div id="principal">
       <aside style="background-color: #DD0F00; width: 200px; padding-bottom: 2%;">
         <center>
           <h3 style="color: #EEEEEE;">Categorias</h3>
           <hr>
-          <a href="#" style="text-decoration: none; color: #EEEEEE;">Salud</a>
+          <a href="#">Salud</a>
           <hr>
-          <a href="#" style="text-decoration: none; color: #EEEEEE;">Farmacia</a>
+          <a href="#">Farmacia</a>
           <hr>
-          <a href="#" style="text-decoration: none; color: #EEEEEE;">Prevención</a>
+          <a href="#">Prevención</a>
           <hr>
-          <a href="#" style="text-decoration: none; color: #EEEEEE;">Marca Propia</a>
+          <a href="#">Marca Propia</a>
           <hr>
-          <a href="#" style="text-decoration: none; color: #EEEEEE;">Salud Sexual</a>
+          <a href="#">Salud Sexual</a>
           <hr>
-          <a href="#" style="text-decoration: none; color: #EEEEEE;">Bebés</a>
+          <a href="#">Bebés</a>
           <hr>
-          <a href="#" style="text-decoration: none; color: #EEEEEE;">Cuidado Personal y Belleza</a>
+          <a href="#">Cuidado Personal y Belleza</a>
           <hr>
-          <a href="#" style="text-decoration: none; color: #EEEEEE;">Dermocosméticos</a>
+          <a href="#">Dermocosméticos</a>
           <hr>
-          <a href="#" style="text-decoration: none; color: #EEEEEE;">Alimentos y Hogar</a>
+          <a href="#">Alimentos y Hogar</a>
           <hr>
-          <a href="#" style="text-decoration: none; color: #EEEEEE;">Promociones</a>
+          <a href="#">Promociones</a>
         </center>
       </aside>
-      <section style="background-color: #EEEEEE; width: 100%;">
+      <section>
         <center>
           <h2>Inicio</h2>
         </center>
-        <article style="padding: 2%;">
-          <h1 style="color: #0055AA;">¿Ya tienes tu tarjeta Benavides Conmigo?</h1>
+        <article>
+          <h1 id="frase">¿Ya tienes tu tarjeta Benavides Conmigo?</h1>
           <p>Solicítala gratis en línea para recibir promociones exclusivas en cada compra.</p>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/dw5DSh-E1K8?si=Fbvp0xBXG0191dBk"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
+          <div class="transicion"><iframe width="560" height="315"
+              src="https://www.youtube.com/embed/dw5DSh-E1K8?si=Fbvp0xBXG0191dBk" title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe></div>
           <br>
           <audio controls autoplay>
             <source src="Big Time Rush (Tono).mp3" type="audio/mp3">
           </audio>
+          <!-- <div class="transicion">Soy un div</div> -->
         </article>
       </section>
     </div>
-    <footer style="background-color: #0055BB; color: white; width: 100%; height: 100px;">
+    <footer>
       <center>
         <p>Derechos reservados.<br>Contactenos en info@victorms.com</p>
       </center>

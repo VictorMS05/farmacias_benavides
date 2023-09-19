@@ -1,0 +1,158 @@
+body {
+    margin: 0%;
+}
+
+#contenedor {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 150px;
+    display: flex;
+}
+
+#logo {
+    background-color: #0055AA;
+    width: 200px;
+    height: 150px;
+}
+
+#slogan {
+    background-color: #0055AA;
+    width: 100%;
+    height: 150px;
+}
+
+a {
+    text-decoration: none;
+    color: #EEEEEE;
+}
+
+h3 {
+    color: white;
+    font-style: oblique;
+}
+
+nav {
+    float: both;
+    background-color: #004477;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
+}
+
+#principal {
+    display: flex;
+}
+
+section {
+    background-color: #EEEEEE;
+    width: 100%;
+}
+
+article {
+    padding: 2%;
+}
+
+#frase {
+    color: #0055AA;
+}
+
+footer {
+    background-color: #0055BB;
+    color: white;
+    width: 100%;
+    height: 100px;
+}
+
+/* Transiciones */
+
+div.transicion {
+    /* width: 100px;
+    height: 100px;
+    background: red;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+    /* For Safari*/
+    transition: width 8s, height 8s, transform 8s;
+}
+
+div:hover.transicion {
+    /* font-size: 24px;
+    color: white;
+    width: 300px;
+    height: 300px; */
+    -webkit-transform: rotate(360deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(360deg);
+}
+
+#titulo {
+    text-shadow: 5px 5px 5px #222222;
+}
+
+/* Menú */
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    /*Aquí puedes cambiar el color de fondo de tu menú*/
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    /*Aquí puedes cambiar el color de letra de los links sin subopciones (Home y News) */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    /*Aquí puedes cambiar el color de letra del link que tiene menú (dropdown)*/
+    /* padding: 14px 16px; */
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
