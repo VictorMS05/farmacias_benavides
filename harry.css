@@ -34,7 +34,7 @@ h3 {
     font-style: oblique;
 }
 
-nav {
+#navegacion {
     float: both;
     background-color: #004477;
     display: flex;
@@ -129,6 +129,7 @@ div:hover.transicion {
 .navbar a:hover,
 .dropdown:hover .dropbtn {
     background-color: red;
+    cursor: pointer;
 }
 
 .dropdown-content {
